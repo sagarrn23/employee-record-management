@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/employee-record-management/static/css/main.ab60237f.chunk.css",
+    "main.js": "/employee-record-management/static/js/main.e0d431ce.chunk.js",
+    "main.js.map": "/employee-record-management/static/js/main.e0d431ce.chunk.js.map",
+    "runtime-main.js": "/employee-record-management/static/js/runtime-main.968f3562.js",
+    "runtime-main.js.map": "/employee-record-management/static/js/runtime-main.968f3562.js.map",
+    "static/css/2.0624914a.chunk.css": "/employee-record-management/static/css/2.0624914a.chunk.css",
+    "static/js/2.16f7985c.chunk.js": "/employee-record-management/static/js/2.16f7985c.chunk.js",
+    "static/js/2.16f7985c.chunk.js.map": "/employee-record-management/static/js/2.16f7985c.chunk.js.map",
+    "index.html": "/employee-record-management/index.html",
+    "precache-manifest.0bfb8d090cc871c111521850f5872673.js": "/employee-record-management/precache-manifest.0bfb8d090cc871c111521850f5872673.js",
+    "service-worker.js": "/employee-record-management/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/employee-record-management/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.ab60237f.chunk.css.map": "/employee-record-management/static/css/main.ab60237f.chunk.css.map"
+  }
+}
