@@ -38,11 +38,27 @@ class App extends React.Component {
         }
     }
 
-    deleteRecord() {
-
+    deleteRecord(id) {
+        axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`)
+            .then(() => {
+                return axios.get(`https://jsonplaceholder.typicode.com/users`)
+            })
+            .then((res) => {
+                this.setState({
+                    empRecord: res.data
+                });
+            })
     }
 
     render() {
+        let displayRecords = this.state.empRecord.map((record) => {
+            return <Record
+                key={record.id}
+                persons={record}
+                deleteRec={() => this.deleteRecord(record.id)}
+            />;
+        });
+
         return (
             <Router>
                 <div className="container-fluid">
@@ -59,10 +75,7 @@ class App extends React.Component {
                                 
                                 <div className="col-md-12">
                                     <ul className="row">
-                                        <Record 
-                                            persons={this.state.empRecord} 
-                                            deleteRec={this.deleteRecord}
-                                        />
+                                        {displayRecords}
                                     </ul>
                                 </div>
                             </React.Fragment>
