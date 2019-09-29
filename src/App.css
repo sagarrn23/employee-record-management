@@ -1,3 +1,35 @@
-.App {
-  text-align: center;
+header {
+  padding: 20px;
+  margin: 0;
+  background: #444;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+.container-fluid {
+  width: 1024px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card{
+  margin-bottom: 15px;
+  text-align: left;
+  flex-direction: row;
+}
+
+.search-employee input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #888;
+  max-width: 500px;
+  min-width: 320px;
+  margin: 20px;
+  font-size: 20px;
+  outline: none;
 }
