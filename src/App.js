@@ -11,13 +11,15 @@ import axios from "axios";
 class App extends React.Component {
     state = {
         title: "Employee Record Management",
-        empRecord: []
+        empRecord: [],
+        empInitRecord: []
     };
 
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
             this.setState({
-                empRecord: res.data
+                empRecord: res.data,
+                empInitRecord: res.data
             });
         });
     }
@@ -26,16 +28,6 @@ class App extends React.Component {
         this.setState({
             empRecord: result
         });
-    }
-
-    updateFreshList(e) {
-        if(e.keyCode === 8 || e.keyCode === 46) {
-            axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
-                this.setState({
-                    empRecord: res.data
-                });
-            });
-        }
     }
 
     deleteRecord(id) {
@@ -68,9 +60,8 @@ class App extends React.Component {
                         <Route exact path="/" render={props => (
                             <React.Fragment>
                                 <Search
-                                    searchItem={this.state.empRecord}
+                                    searchItem={this.state.empInitRecord}
                                     searchHandler={this.filterEmp.bind(this)}
-                                    listReset={this.updateFreshList.bind(this)}
                                 />
                                 
                                 <div className="col-md-12">

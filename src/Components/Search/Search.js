@@ -12,8 +12,12 @@ const searchResult = (event, data, searchHandler) => {
         keys: ['name', 'email', 'company.name'],
     }
     let fuse = new Fuse(data, options);
-    let filterResult = fuse.search(event.target.value);
-    searchHandler(filterResult);
+    if(event.target.value) {
+        let filterResult = fuse.search(event.target.value);
+        searchHandler(filterResult)
+    } else {
+        searchHandler(data);
+    }
 }
 
 const Search = (props) => {
@@ -24,7 +28,6 @@ const Search = (props) => {
                 id="search-emp" 
                 placeholder="Search Record" 
                 onChange={(event) => searchResult(event, props.searchItem, props.searchHandler)}
-                onKeyDown={(e) => props.listReset(e)}
             />
         </div>
     )
