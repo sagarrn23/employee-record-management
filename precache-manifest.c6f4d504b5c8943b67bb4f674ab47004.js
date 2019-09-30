@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a01be2dea0e910e2beb825dc645417f",
+    "revision": "3f7db9d379264177cabbd80a2c3bb20e",
     "url": "/employee-record-management/index.html"
   },
   {
-    "revision": "45f20f7d2d46276ea282",
+    "revision": "049023e084911f6a1264",
     "url": "/employee-record-management/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "5855a68a1e30487be3db",
+    "revision": "09a40113931a1bbf9936",
     "url": "/employee-record-management/static/css/main.ab60237f.chunk.css"
   },
   {
-    "revision": "45f20f7d2d46276ea282",
-    "url": "/employee-record-management/static/js/2.16f7985c.chunk.js"
+    "revision": "049023e084911f6a1264",
+    "url": "/employee-record-management/static/js/2.353aae9f.chunk.js"
   },
   {
-    "revision": "5855a68a1e30487be3db",
-    "url": "/employee-record-management/static/js/main.e0d431ce.chunk.js"
+    "revision": "09a40113931a1bbf9936",
+    "url": "/employee-record-management/static/js/main.88af77d6.chunk.js"
   },
   {
     "revision": "7723563867836102a9d9",
